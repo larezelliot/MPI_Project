@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <mpi.h>
 #define NUMSTEPS 1000000
 
 double calculate_approximation(double a, double b, double step){
