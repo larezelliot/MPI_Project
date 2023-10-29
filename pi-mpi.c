@@ -58,7 +58,7 @@ int main(int argc, char** argv) {
     // Sends approximation to parent
     if(world_rank != 0){
         double PI = approximation;
-		printf("PI is %.20f\n",pi);
+		printf("PI is %.20f\n",PI);
 	}else{
     	MPI_Send(&approximation, 1, MPI_DOUBLE, parent, 0, MPI_COMM_WORLD);
 	}
